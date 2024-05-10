@@ -38,7 +38,7 @@ export default {
     optionClass(pokemonId) {
       if (!this.optionSelected) return '';
       if (this.optionSelected === pokemonId && pokemonId !== this.pokemon?.id) return 'option-incorrect';
-      if (pokemonId === this.pokemon?.id) return 'option-correct';
+      if (pokemonId === this.pokemon?.id) return 'option-correct animation-fade';
       return '';
     },
   }
@@ -50,11 +50,15 @@ export default {
 ul {
   list-style-type: none;
   padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  row-gap: 8px;
+  column-gap: 24px;
 }
 
 button {
   background-color: white;
-  border-radius: 5px;
+  border-radius: 8px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   cursor: pointer;
   margin-bottom: 10px;
@@ -62,7 +66,7 @@ button {
   color: #000;
   text-align: center;
   font-weight: 600;
-  padding: 8px;
+  padding: 12px 16px;
 }
 
 button:disabled {
@@ -87,5 +91,6 @@ button:hover {
   display: flex;
   justify-content: center;
   padding-top: 20px;
+  margin-top: 8px;
 }
 </style>

@@ -112,24 +112,26 @@ export default {
 }
 
 h2 {
-  margin-top: 12px;
+  margin-top: 16px;
   color: white;
   font-size: 18px;
   padding: 4px 16px 8px 16px;
   border-radius: 8px;
-  background-color: #f44336;
+  /* background-color: #f44336; */
 }
 
 .success {
   background-color: #4caf50;
+  /* border: 1px solid #4caf50; */
 }
 
 .error {
   background-color: #f44336;
+  /* border: 1px solid #ef4444; */
 }
 
 button {
-  background-color: #4caf50;
+  background-color: #3b82f6;
   color: white;
   border: none;
   border-radius: 8px;
@@ -139,6 +141,6 @@ button {
   margin-top: 20px;
 }
 button:hover {
-  background-color: #388e3c;
+  background-color: #2563eb;
 }
 </style>
